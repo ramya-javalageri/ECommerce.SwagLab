@@ -18,6 +18,19 @@
 
     </test>
 
+	<test name="Firefox">
+	
+        <parameter name="browser" value="firefox"/>
+
+        <classes>
+            <class name="ecommerce_swaglabs.login.LoginTest"/>
+            <class name="ecommerce_swaglabs.product.ProductCartIntegrationTest"/>
+            <class name="ecommerce_swaglabs.cart.CartCheckoutIntegrationTest"/>
+            <class name="ecommerce_swaglabs.menu.MenuIntegrationTest"/>
+            <class name="ecommerce_swaglabs.checkout.CheckoutTest"/>
+        </classes>
+	
+    </test>
 
     <test name="Edge">
 
@@ -34,18 +47,6 @@
     </test>
 
 
-    <test name="Firefox">
-
-        <parameter name="browser" value="firefox"/>
-
-        <classes>
-            <class name="ecommerce_swaglabs.login.LoginTest"/>
-            <class name="ecommerce_swaglabs.product.ProductCartIntegrationTest"/>
-            <class name="ecommerce_swaglabs.cart.CartCheckoutIntegrationTest"/>
-            <class name="ecommerce_swaglabs.menu.MenuIntegrationTest"/>
-            <class name="ecommerce_swaglabs.checkout.CheckoutTest"/>
-        </classes>
-
-    </test>
+    
 
 </suite>

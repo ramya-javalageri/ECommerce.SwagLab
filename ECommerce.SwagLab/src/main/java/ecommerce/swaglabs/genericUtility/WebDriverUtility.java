@@ -42,6 +42,8 @@ public class WebDriverUtility {
 			Map<String, Object> prefs = new HashMap<>();
 			settings.addArguments("--headless=new");
 			settings.addArguments("--window-size=1920,1080");
+			settings.addArguments("--no-first-run");
+	        settings.addArguments("--no-default-browser-check");
 			prefs.put("profile.password_manager_leak_detection", false);
 			settings.setExperimentalOption("prefs", prefs);
 			driver = new EdgeDriver(settings);
@@ -56,7 +58,8 @@ public class WebDriverUtility {
 			driver = new FirefoxDriver(settings);
 		}
 
-		maximizeWindow(driver);
+		if(!browser.equalsIgnoreCase("edge"))
+			maximizeWindow(driver);
 		genericWait(driver);
 
 		return driver;
