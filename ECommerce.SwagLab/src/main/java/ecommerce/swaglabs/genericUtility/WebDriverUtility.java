@@ -40,6 +40,8 @@ public class WebDriverUtility {
 		{
 			EdgeOptions settings = new EdgeOptions();
 			Map<String, Object> prefs = new HashMap<>();
+			settings.addArguments("--headless=new");
+			settings.addArguments("--window-size=1920,1080");
 			prefs.put("profile.password_manager_leak_detection", false);
 			settings.setExperimentalOption("prefs", prefs);
 			driver = new EdgeDriver(settings);
