@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SwagLabs Integration Suite" parallel="false">
+
+    <test name="Integration Tests">
+
+        <groups>
+            <run>
+                <include name="integration"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="ecommerce_swaglabs.*"/>
+        </packages>
+
+    </test>
+
+</suite>

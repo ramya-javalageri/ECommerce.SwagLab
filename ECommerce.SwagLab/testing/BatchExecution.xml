@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SwagLabs Batch Suite">
+
+    <test name="Batch Tests">
+
+        <classes>
+
+            <class name="ecommerce_swaglabs.login.LoginTest"/>
+            <class name="ecommerce_swaglabs.login.LoginNegativeTest"/>
+
+            <class name="ecommerce_swaglabs.product.ProductTest"/>
+            <class name="ecommerce_swaglabs.product.ProductCartIntegrationTest"/>
+
+            <class name="ecommerce_swaglabs.cart.CartTest"/>
+            <class name="ecommerce_swaglabs.cart.CartCheckoutIntegrationTest"/>
+            <class name="ecommerce_swaglabs.cart.CartTest_Negative"/>
+
+            <class name="ecommerce_swaglabs.checkout.CheckoutTest"/>
+            <class name="ecommerce_swaglabs.checkout.CheckoutOverviewTest"/>
+            <class name="ecommerce_swaglabs.checkout.CheckoutCompletionTest"/>
+            <class name="ecommerce_swaglabs.checkout.CheckoutNegativeTest"/>
+
+            <class name="ecommerce_swaglabs.menu.MenuTest"/>
+            <class name="ecommerce_swaglabs.menu.MenuIntegrationTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
