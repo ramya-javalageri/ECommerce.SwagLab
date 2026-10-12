@@ -1,4 +1,4 @@
-activeProfiles=
+activeProfiles=batch, cart, checkout, login, product, menu, functional, integration, smoke, system, negative, parallel, crossbrowser, regression
 eclipse.preferences.version=1
 resolveWorkspaceProjects=true
 version=1
