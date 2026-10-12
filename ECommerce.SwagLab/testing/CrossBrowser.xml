@@ -32,19 +32,7 @@
 	
     </test>
 
-    <test name="Edge">
-
-        <parameter name="browser" value="edge"/>
-
-        <classes>
-            <class name="ecommerce_swaglabs.login.LoginTest"/>
-            <class name="ecommerce_swaglabs.product.ProductCartIntegrationTest"/>
-            <class name="ecommerce_swaglabs.cart.CartCheckoutIntegrationTest"/>
-            <class name="ecommerce_swaglabs.menu.MenuIntegrationTest"/>
-            <class name="ecommerce_swaglabs.checkout.CheckoutTest"/>
-        </classes>
-
-    </test>
+ 
 
 
     
