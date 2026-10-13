@@ -151,6 +151,13 @@
                 <suiteXmlFile>testing/Regression.xml</suiteXmlFile>
             </properties>
         </profile>
+        
+        <profile>
+            <id>CB</id>
+            <properties>
+                <suiteXmlFile>testing/CrossBrowserExecution.xml</suiteXmlFile>
+            </properties>
+        </profile>
     </profiles>
 
 </project>

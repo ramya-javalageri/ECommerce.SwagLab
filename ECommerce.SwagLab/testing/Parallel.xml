@@ -12,8 +12,8 @@
 		</classes>
     </test>
     
-    <test name="Edge Tests"  >
-        <parameter name="browser" value="edge"/>
+    <test name="Firefox Tests"  >
+        <parameter name="browser" value="firefox"/>
         <classes>
             <class name="ecommerce_swaglabs.login.LoginTest"/>
             <class name="ecommerce_swaglabs.product.ProductCartIntegrationTest"/>

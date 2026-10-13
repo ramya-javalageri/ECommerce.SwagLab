@@ -16,7 +16,6 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -40,7 +39,6 @@
             <artifactId>testng</artifactId>
             <version>7.10.2</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -65,110 +63,101 @@
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 
     <profiles>
-
         <profile>
             <id>batch</id>
             <properties>
                 <suiteXmlFile>testing/BatchExecution.xml</suiteXmlFile>
             </properties>
         </profile>
-
         <profile>
             <id>cart</id>
             <properties>
                 <suiteXmlFile>testing/Cart.xml</suiteXmlFile>
             </properties>
         </profile>
-
         <profile>
             <id>checkout</id>
             <properties>
                 <suiteXmlFile>testing/Checkout.xml</suiteXmlFile>
             </properties>
         </profile>
-        
         <profile>
             <id>login</id>
             <properties>
                 <suiteXmlFile>testing/Login.xml</suiteXmlFile>
             </properties>
         </profile>
-        
         <profile>
             <id>product</id>
             <properties>
                 <suiteXmlFile>testing/Product.xml</suiteXmlFile>
             </properties>
         </profile>
-        
         <profile>
             <id>menu</id>
             <properties>
                 <suiteXmlFile>testing/Menu.xml</suiteXmlFile>
             </properties>
         </profile>
-        
         <profile>
             <id>functional</id>
             <properties>
                 <suiteXmlFile>testing/Functional.xml</suiteXmlFile>
             </properties>
         </profile>
-        
         <profile>
             <id>integration</id>
             <properties>
                 <suiteXmlFile>testing/Integration.xml</suiteXmlFile>
             </properties>
         </profile>
-        
         <profile>
             <id>smoke</id>
             <properties>
                 <suiteXmlFile>testing/Smoke.xml</suiteXmlFile>
             </properties>
         </profile>
-
-		<profile>
+        <profile>
             <id>system</id>
             <properties>
                 <suiteXmlFile>testing/System.xml</suiteXmlFile>
             </properties>
         </profile>
-        
         <profile>
             <id>negative</id>
             <properties>
                 <suiteXmlFile>testing/Negative.xml</suiteXmlFile>
             </properties>
         </profile>
-        
         <profile>
             <id>parallel</id>
             <properties>
                 <suiteXmlFile>testing/Parallel.xml</suiteXmlFile>
             </properties>
         </profile>
-        
         <profile>
             <id>crossbrowser</id>
             <properties>
                 <suiteXmlFile>testing/CrossBrowser.xml</suiteXmlFile>
             </properties>
         </profile>
-        
         <profile>
             <id>regression</id>
             <properties>
                 <suiteXmlFile>testing/Regression.xml</suiteXmlFile>
             </properties>
         </profile>
-	
+        
+        <profile>
+            <id>CB</id>
+            <properties>
+                <suiteXmlFile>testing/CrossBrowserExecution.xml</suiteXmlFile>
+            </properties>
+        </profile>
     </profiles>
 
 </project>
